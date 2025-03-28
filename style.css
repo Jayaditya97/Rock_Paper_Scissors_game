@@ -12,3 +12,31 @@ body {
     align-items: center;
     padding: 20px;
 }
+.game-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.score-box {
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100px;
+}
