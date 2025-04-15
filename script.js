@@ -21,3 +21,20 @@ const choiceIcons = {
     scissors: '✌'
 };
 
+// Add event listeners to choice buttons
+choiceButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        if (isAnimating) return;
+        
+        const userChoice = button.getAttribute('data-choice');
+        playGame(userChoice);
+    });
+});
+
+// Reset button event listener
+resetButton.addEventListener('click', resetGame);
+
+// Play game function
+function playGame(userChoice) {
+    isAnimating = true;
+}
