@@ -66,3 +66,7 @@ h1 {
     min-height: 36px;
 }
 
+
+.win { color: #4caf50; }
+.lose { color: #f44336; }
+.draw { color: #ff9800; }
