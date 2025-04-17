@@ -38,3 +38,31 @@ resetButton.addEventListener('click', resetGame);
 function playGame(userChoice) {
     isAnimating = true;
 }
+    // Display user choice
+    userChoiceDisplay.textContent = choiceIcons[userChoice];
+    
+    // Reset computer choice and result message
+    computerChoiceDisplay.textContent = '?';
+    resultMessage.textContent = 'Computer is choosing...';
+    resultMessage.className = 'result-message';
+    
+    // Simulate computer "thinking"
+    setTimeout(() => {
+        // Get computer choice
+        const computerChoice = getComputerChoice();
+        computerChoiceDisplay.textContent = choiceIcons[computerChoice];
+        
+        // Determine winner
+        const result = determineWinner(userChoice, computerChoice);
+        
+        // Update score
+        updateScore(result);
+        
+        // Display result
+        displayResult(result, userChoice, computerChoice);
+        
+        // Add to history
+        addToHistory(userChoice, computerChoice, result);
+        
+        isAnimating = false;
+    }, 1000);
