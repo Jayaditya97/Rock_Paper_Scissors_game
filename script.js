@@ -90,3 +90,31 @@ function determineWinner(userChoice, computerChoice) {
     return 'lose';
 }
 
+// Update score
+function updateScore(result) {
+    if (result === 'win') {
+        userScore++;
+        userScoreElement.textContent = userScore;
+    } else if (result === 'lose') {
+        computerScore++;
+        computerScoreElement.textContent = computerScore;
+    }
+}
+
+// Display result
+function displayResult(result, userChoice, computerChoice) {
+    let message = '';
+    
+    if (result === 'win') {
+        message = 'You win!';
+        resultMessage.className = 'result-message win';
+    } else if (result === 'lose') {
+        message = 'Computer wins!';
+        resultMessage.className = 'result-message lose';
+    } else {
+        message = "It's a draw!";
+        resultMessage.className = 'result-message draw';
+    }
+    
+    resultMessage.textContent = message;
+}
