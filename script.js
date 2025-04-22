@@ -120,3 +120,37 @@ function displayResult(result, userChoice, computerChoice) {
     
     resultMessage.textContent = message;
 }
+
+// Add to history
+function addToHistory(userChoice, computerChoice, result) {
+    // Add to history array
+    gameHistory.unshift({ userChoice, computerChoice, result });
+    
+    // Keep only last 10 games
+    if (gameHistory.length > 10) {
+        gameHistory.pop();
+    }
+    
+    // Update history display
+    updateHistoryDisplay();
+}
+
+// Update history display
+function updateHistoryDisplay() {
+    historyList.innerHTML = '';
+    
+    gameHistory.forEach(game => {
+        const historyItem = document.createElement('div');
+        historyItem.className = `history-item history-${game.result}`;
+        
+        const gameInfo = document.createElement('div');
+        gameInfo.textContent = `${game.userChoice.charAt(0).toUpperCase() + game.userChoice.slice(1)} vs ${game.computerChoice.charAt(0).toUpperCase() + game.computerChoice.slice(1)}`;
+        
+        const gameResult = document.createElement('div');
+        gameResult.textContent = game.result.charAt(0).toUpperCase() + game.result.slice(1);
+        
+        historyItem.appendChild(gameInfo);
+        historyItem.appendChild(gameResult);
+        historyList.appendChild(historyItem);
+    });
+}
