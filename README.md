@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rock Paper Scissors Game
 
 A simple Rock-Paper-Scissors game built using **HTML, CSS, and JavaScript**. Play against the computer and test your luck!
@@ -45,4 +46,6 @@ Feel free to fork this project and contribute by opening a pull request.
 
 ## License
 This project is open-source and available under the **MIT License**.
+=======
+>>>>>>> my-feature
 
