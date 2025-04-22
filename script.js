@@ -18,7 +18,7 @@ const historyList = document.getElementById('history-list');
 const choiceIcons = {
     rock: '✊',
     paper: '✋',
-    scissors: '✌'
+    scissors: '✌️'
 };
 
 // Add event listeners to choice buttons
@@ -37,7 +37,7 @@ resetButton.addEventListener('click', resetGame);
 // Play game function
 function playGame(userChoice) {
     isAnimating = true;
-}
+    
     // Display user choice
     userChoiceDisplay.textContent = choiceIcons[userChoice];
     
@@ -66,13 +66,15 @@ function playGame(userChoice) {
         
         isAnimating = false;
     }, 1000);
+}
 
-    // Get computer choice
+// Get computer choice
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex];
 }
+
 // Determine winner
 function determineWinner(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
