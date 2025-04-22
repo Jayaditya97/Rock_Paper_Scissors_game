@@ -73,3 +73,20 @@ function getComputerChoice() {
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex];
 }
+// Determine winner
+function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return 'draw';
+    }
+    
+    if (
+        (userChoice === 'rock' && computerChoice === 'scissors') ||
+        (userChoice === 'paper' && computerChoice === 'rock') ||
+        (userChoice === 'scissors' && computerChoice === 'paper')
+    ) {
+        return 'win';
+    }
+    
+    return 'lose';
+}
+
