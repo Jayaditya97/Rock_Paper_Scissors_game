@@ -154,3 +154,9 @@ function updateHistoryDisplay() {
         historyList.appendChild(historyItem);
     });
 }
+
+// Reset game
+function resetGame() {
+    userScore = 0;
+    computerScore = 0;
+    gameHistory = [];}
