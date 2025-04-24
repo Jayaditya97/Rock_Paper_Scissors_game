@@ -97,3 +97,11 @@ h1 {
     align-items: center;
     font-size: 30px;
 }
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
