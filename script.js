@@ -103,23 +103,7 @@ function updateScore(result) {
     }
 }
 
-// Display result
-function displayResult(result, userChoice, computerChoice) {
-    let message = '';
-    
-    if (result === 'win') {
-        message = 'You win!';
-        resultMessage.className = 'result-message win';
-    } else if (result === 'lose') {
-        message = 'Computer wins!';
-        resultMessage.className = 'result-message lose';
-    } else {
-        message = "It's a draw!";
-        resultMessage.className = 'result-message draw';
-    }
-    
-    resultMessage.textContent = message;
-}
+
 
 // Add to history
 function addToHistory(userChoice, computerChoice, result) {
