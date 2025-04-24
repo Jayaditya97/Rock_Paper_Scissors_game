@@ -46,5 +46,5 @@ Feel free to fork this project and contribute by opening a pull request.
 ## License
 This project is open-source and available under the **MIT License**.
 =======
->>>>>>> my-feature
+
 

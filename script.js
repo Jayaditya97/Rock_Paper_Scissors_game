@@ -154,3 +154,4 @@ function updateHistoryDisplay() {
         historyList.appendChild(historyItem);
     });
 }
+
