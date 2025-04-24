@@ -155,3 +155,20 @@ function updateHistoryDisplay() {
     });
 }
 
+// Reset game
+function resetGame() {
+    userScore = 0;
+    computerScore = 0;
+    gameHistory = [];
+    
+    userScoreElement.textContent = '0';
+    computerScoreElement.textContent = '0';
+    
+    resultMessage.textContent = 'Make your choice!';
+    resultMessage.className = 'result-message';
+    
+    userChoiceDisplay.textContent = '?';
+    computerChoiceDisplay.textContent = '?';
+    
+    historyList.innerHTML = '';
+}
