@@ -150,7 +150,6 @@ h1 {
     transition: background-color 0.2s;
 }
 
-
 .reset-btn:hover {
     background-color: #555;
 }
@@ -189,18 +188,13 @@ h1 {
         flex-direction: row;
     }
     
+    .choices-display {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .vs {
+        margin: 10px 0;
+    }
 }
-.choices-display {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.vs {
-    margin: 10px 0;
-}
-
-
-
-
-
