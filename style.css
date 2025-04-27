@@ -5,14 +5,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-body {
-    background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+
 
 .game-container {
     background-color: white;
