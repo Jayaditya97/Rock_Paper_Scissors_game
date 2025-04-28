@@ -14,12 +14,7 @@ const choiceButtons = document.querySelectorAll('.choice-btn');
 const resetButton = document.getElementById('reset-btn');
 const historyList = document.getElementById('history-list');
 
-// Choice icons
-const choiceIcons = {
-    rock: '✊',
-    paper: '✋',
-    scissors: '✌️'
-};
+
 
 // Add event listeners to choice buttons
 choiceButtons.forEach(button => {
