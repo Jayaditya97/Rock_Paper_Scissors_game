@@ -22,12 +22,7 @@ const choiceIcons = {
 };
 
 // Add event listeners to choice buttons
-choiceButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        if (isAnimating) return;
-        
-        const userChoice = button.getAttribute('data-choice');
-        playGame(userChoice);
+
     });
 });
 
