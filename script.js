@@ -172,3 +172,6 @@ function resetGame() {
     
     historyList.innerHTML = '';
 }
+
+
+
